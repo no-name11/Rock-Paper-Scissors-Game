@@ -1,10 +1,11 @@
+#i am not good at writing comments plz ask anything you dont get.. feel free to copy the code...
 import random
 
 print("welciome"'\n''this is a rock paper scissors game.')
 com_score = 0
 player_score = 0
 played = False
-
+#defining the rule of the game and the main body
 def game(player_choice):
     global com_score
     global player_score
@@ -55,7 +56,7 @@ def game(player_choice):
 
     print("player score is = " + str(player_score))
     print("computer score is = " + str(com_score) + '\n\n\n')
-
+#defining the score machine
 def score(played):
     global win
 
@@ -70,7 +71,7 @@ def score(played):
         elif player_score == 5:
             print('the player won this series(you**)')
             win = True
-
+#here is how the game will work
 win = False
 
 a = str(input('do you want to play? (y/n)'))
